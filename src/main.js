@@ -1,7 +1,7 @@
 const tabby = document.querySelector('.tabby')
 const tabsList = tabby.querySelector('.tabs')
-const tabs = Array.from(tabby.querySelectorAll('.tab')) //creates an array of tabs
-const tabContents = Array.from(tabby.querySelectorAll('.tab-content')) //creates an arrat if tab contents
+const tabs = [...tabby.querySelectorAll('.tab')]//creates an array of tabs, use the spread operator
+const tabContents = [...tabby.querySelectorAll('.tab-content')] //creates an array of tab contents, use the spread operator
 
 
 tabsList.addEventListener('click', e => {
